@@ -31,14 +31,14 @@ if exist Saved\Config (
 )
 
 
-:: Clean Visual Studio's temporary files
+:: Clean Visual Studio temporary files
 echo Clear Visual Studio's temporary files...
 
 rmdir /s /q .vs
 del /s /q *.sln
 
 
-:: Clean Unreal Project's temporary files.
+:: Clean Unreal Project temporary files.
 echo Clear Unreal Project's temporary files...
 
 rmdir /s /q Binaries
@@ -48,7 +48,7 @@ rmdir /s /q DerivedDataCache
 
 
 
-:: Clean Unreal Plugins' temporary files.
+:: Clean Unreal Project's Plugins temporary files.
 echo Clear Unreal Plugins's temporary files...
 
 for /D %%G in ("Plugins\*") do (

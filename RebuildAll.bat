@@ -31,7 +31,7 @@ del /q gen_temp.txt
 echo Generate %projectName% Visual Studio project files...
 %gen% /projectfiles "%cd%\%projectName%.uproject"
 
-:: launch Visual Studio.
+:: Launch Visual Studio.
 start %projectName%.sln
 
 :: Launch Unreal Engine Editor.
