@@ -1,7 +1,8 @@
 :: Copyright (c) 2021 Maxime "mrouffet" ROUFFET. All Rights Reserved.
 
+@echo off
+
 setlocal
-echo off
 
 :: Clear console.
 cls
@@ -18,7 +19,7 @@ timeout 3 /nobreak
 
 
 :: Backup local editor settings.
-set lconfig= Windows WorldState
+set lconfig=Windows WorldState
 
 if exist Saved\Config (
 	echo Backup local editor settings...
