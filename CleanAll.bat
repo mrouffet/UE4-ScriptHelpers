@@ -1,4 +1,5 @@
 :: Copyright (c) 2021 Maxime "mrouffet" ROUFFET. All Rights Reserved.
+:: From MIT Repository: https://github.com/mrouffet/UE4-ScriptHelpers
 
 @echo off
 

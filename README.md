@@ -7,6 +7,8 @@ Helper scripts for Unreal Engine 4.
 
 ## I. Clean All
 
+[CleanAll.bat](https://github.com/mrouffet/UE4-ScriptHelpers/blob/main/CleanAll.bat)
+
 Clear all temporary files.
 
 - Kill process
@@ -23,6 +25,8 @@ Clear all temporary files.
 
 
 ## II. Rebuild All
+
+[RebuildAll.bat](https://github.com/mrouffet/UE4-ScriptHelpers/blob/main/RebuildAll.bat)
 
 Full rebuild after Clear.\
 /!\ Require **Clean All** script.
