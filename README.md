@@ -1,15 +1,15 @@
 # UE4-ScriptHelpers
 
-Helper scripts for Unreal Engine 4.
+Helper scripts for **Unreal Engine 4**.
 
-/!\ Scripts must be put in the project root folder (next to **uproject** file).
+/!\ Scripts must be put in the project **root folder** (next to **uproject** file).
 
 
 ## I. Clean All
 
 [CleanAll.bat](https://github.com/mrouffet/UE4-ScriptHelpers/blob/main/CleanAll.bat)
 
-Clear all temporary files.
+Clear all temporary and build files.
 
 - Kill process
 	- Kill Unreal Engine
@@ -18,10 +18,16 @@ Clear all temporary files.
 
 - Clear temporary files
 	- Visual Studio
+		- .vs
+		- .sln
 	- Unreal Project
+		- Binaries
+		- Intermediate
+		- Saved (Local Editor settings are **not** deleted)
+		- DerivedDataCache
 	- Unreal Project's Plugins
-
-\* Local Editor settings are **saved**.
+		- Binaries
+		- Intermediate
 
 
 ## II. Rebuild All
@@ -32,7 +38,10 @@ Full rebuild after Clear.\
 /!\ Require **Clean All** script.
 
 - Call Clean All.
-- Generate new Visual Studio project files
+- Generate new Visual Studio project files (using Unreal Engine generation script).
+	- .vcxproj
+	- .sln
 - Launch Visual Studio
+	- Generate new .vs/
 - Build Sources
 - Launch Editor
